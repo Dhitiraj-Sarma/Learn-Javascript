@@ -47,3 +47,43 @@ function isPalindrome(str) {
 
 console.log(isPalindrome("rtr")); // true
 console.log(isPalindrome("Hello")); // false
+
+// Reverse a Number
+
+function reverseNumber(num) {
+  var reversed = 0;
+
+  while (num !== 0) {
+    var digit = num % 10; // Get the last digit
+    reversed = reversed * 10 + digit; // Append it to reversed
+    num = Math.floor(num / 10); // Remove the last digit
+  }
+
+  return reversed;
+}
+
+console.log(reverseNumber(1234)); // 4321
+
+// Reverse a String
+
+// first build it using loop, no built in function
+function reverseString(str) {
+  var reversed = "";
+
+  for (var i = str.length - 1; i >= 0; i--) {
+    reversed += str[i]; // Add characters from the end
+  }
+
+  console.log(reversed);
+}
+
+reverseString("Hello"); // olleH
+
+// now build it using built in functions
+
+function reverseStringBuilt(str) {
+  const reversed = str.split("").reverse().join("");
+  console.log(reversed);
+}
+
+reverseStringBuilt("Javascript"); //tpircsavaJ
