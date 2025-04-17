@@ -25,3 +25,25 @@ const isEven = function (number) {
 
 console.log(isEven(4)); //  even
 console.log(isEven(5)); // odd
+
+// Creating a function that check that a string is Palindrome or not
+
+function isPalindrome(str) {
+  // 1. Normalize: lowercase all letters
+  const lower = str.toLowerCase();
+
+  // 3. Split into characters
+  const chars = lower.split("");
+
+  // 4. Reverse the array
+  const reversedChars = chars.reverse();
+
+  // 5. Join back into a string
+  const reversed = reversedChars.join("");
+
+  // 6. Compare cleaned string to its reverse
+  return lower === reversed;
+}
+
+console.log(isPalindrome("rtr")); // true
+console.log(isPalindrome("Hello")); // false
