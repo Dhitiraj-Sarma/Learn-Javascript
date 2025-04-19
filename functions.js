@@ -87,3 +87,19 @@ function reverseStringBuilt(str) {
 }
 
 reverseStringBuilt("Javascript"); //tpircsavaJ
+
+// Finding the Fibonacci sequence
+
+// We will find this using Recursive Function
+function fibonacci(n) {
+  if (n < 2) {
+    return n; // For numbers less than 2 it gives us the same result
+  }
+
+  return fibonacci(n - 1) + fibonacci(n - 2);
+  // For number grater than 2 it add the previous two numbers (for 3, it add fibonacci(2) : 1 + fibonacci(1) : 1 => so answer is 2)
+}
+
+for (let i = 0; i < 10; i++) {
+  console.log(fibonacci(i));
+}
