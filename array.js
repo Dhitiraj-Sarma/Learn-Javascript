@@ -29,4 +29,9 @@ function findMax(arr) {
 
 console.log(findMax([10, 12, 1, 0, -1, 30, -100])); // Output: 30
 
+// function with built in function
+function findMax(arr) {
+  return Math.max(...arr);
+}
 
+console.log(findMax([3, 7, 2, 9, 5])); // Output: 9
