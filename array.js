@@ -35,3 +35,13 @@ function findMax(arr) {
 }
 
 console.log(findMax([3, 7, 2, 9, 5])); // Output: 9
+
+
+// Reverse an array
+
+// using built in functions
+function reverseArray(arr) {
+	return arr.slice().reverse();
+  }
+  
+  console.log(reverseArray([1, 2, 3, 4])); // Output: [4, 3, 2, 1]
