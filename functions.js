@@ -101,5 +101,5 @@ function fibonacci(n) {
 }
 
 for (let i = 0; i < 10; i++) {
-  console.log(fibonacci(i));
+  console.log(fibonacci(i)); // 0 1 1 2 3 5 8 13 21 34
 }
