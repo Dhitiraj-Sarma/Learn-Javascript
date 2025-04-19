@@ -36,12 +36,25 @@ function findMax(arr) {
 
 console.log(findMax([3, 7, 2, 9, 5])); // Output: 9
 
-
 // Reverse an array
 
 // using built in functions
 function reverseArray(arr) {
-	return arr.slice().reverse();
+  return arr.slice().reverse();
+}
+
+console.log(reverseArray([1, 2, 3, 4])); // Output: [4, 3, 2, 1]
+
+// without using build in function
+
+function reverseArray(arr) {
+  const reversed = []; // Initialize a empty array
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]); // pushing element from the last element of err into reversed array
   }
-  
-  console.log(reverseArray([1, 2, 3, 4])); // Output: [4, 3, 2, 1]
+
+  return reversed; // return the reversed array
+}
+
+console.log(reverseArray([1, 2, 3, 4])); // Output: [4, 3, 2, 1]
