@@ -58,3 +58,10 @@ function reverseArray(arr) {
 }
 
 console.log(reverseArray([1, 2, 3, 4])); // Output: [4, 3, 2, 1]
+
+//// ADDING AN ELEMENT TO AN ARRAY FROM (START AND LAST)
+
+// ADDING FROM LAST
+const array = [1, 2, 3, 4, 5];
+array.push(6);
+console.log(array);
