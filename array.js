@@ -69,3 +69,9 @@ console.log(array); // Output: [ 1, 2, 3, 4, 5, 6 ]
 // ADDING FROM FIRST
 array.unshift(0);
 console.log(array); // Output: [ 0, 1, 2, 3, 4, 5, 6 ]
+
+//// REMOVING AN ELEMENT FROM AN ARRAY FROM (START AND LAST)
+
+// REMOVE FROM LAST
+array.pop();
+console.log(array); // Output: [ 0, 1, 2, 3, 4, 5 ]
