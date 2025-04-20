@@ -64,4 +64,8 @@ console.log(reverseArray([1, 2, 3, 4])); // Output: [4, 3, 2, 1]
 // ADDING FROM LAST
 const array = [1, 2, 3, 4, 5];
 array.push(6);
-console.log(array);
+console.log(array); // Output: [ 1, 2, 3, 4, 5, 6 ]
+
+// ADDING FROM FIRST
+array.unshift(0);
+console.log(array); // Output: [ 0, 1, 2, 3, 4, 5, 6 ]
