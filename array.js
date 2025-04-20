@@ -79,3 +79,19 @@ console.log(array); // Output: [ 0, 1, 2, 3, 4, 5 ]
 // REMOVE FROM FIRST
 array.shift();
 console.log(array); // Output: [ 1, 2, 3, 4, 5 ]
+
+///// REMOVING THE DUBLICATE ELEMENTS FROM AN ARRAY
+
+function removeDuplicates(arr) {
+  let result = []; // To store the elements
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!result.includes(arr[i])) {
+      result.push(arr[i]); // If the element doesn't exist in the result array then push to the result array
+    }
+  }
+
+  return result;
+}
+
+console.log(removeDuplicates([1, 1, 2, 3, 2, 5, 6, 7, 5])); // Output: [ 1, 2, 3, 5, 6, 7 ]
