@@ -83,3 +83,11 @@ obj[sym2]; // "value2"
 for (let key in obj) {
   console.log(key); // No output
 }
+
+// -------------- UNDEFINED --------------
+// A variable that has been declared but not assigned a value is undefined
+// Undefined is a primitive value
+let x;
+typeof x; // undefined
+console.log(x); // undefined
+// Undefined is a falsy value
