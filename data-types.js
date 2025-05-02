@@ -48,3 +48,11 @@ const big = 123456789768012345678901234567890n;
 typeof big; // bigint
 
 typeof BigInt(12341354123324255415); // bigint
+
+// -------------- BOOLEAN ----------------
+// Represents a logical entity and can have two values: true or false
+// Commonly used in if else statement
+let isTrue = true;
+let isFalse = false;
+typeof isTrue; // boolean
+typeof isFalse; // boolean
