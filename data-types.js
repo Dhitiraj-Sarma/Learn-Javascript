@@ -56,3 +56,30 @@ let isTrue = true;
 let isFalse = false;
 typeof isTrue; // boolean
 typeof isFalse; // boolean
+
+// -------------- SYMBOL -----------------
+// A unique and immutable primitive value, often used as object property keys
+// Symbols are created using the Symbol() function
+let sym1 = Symbol("description");
+let sym2 = Symbol("description");
+console.log(sym1); //Symbol(description)
+// Symbols are unique, even if they have the same description
+// They are not equal to each other
+// Symbols are not equal to strings, numbers, or any other type
+
+sym1 === sym2; // false
+typeof sym1; // symbol
+typeof sym2; // symbol
+// Symbols are not automatically converted to strings
+String(sym1); // "Symbol(description)"
+// Using symbols as object keys
+let obj = {
+  [sym1]: "value1",
+  [sym2]: "value2",
+};
+obj[sym1]; // "value1"
+obj[sym2]; // "value2"
+// Symbols are not enumerable in for...in loops
+for (let key in obj) {
+  console.log(key); // No output
+}
