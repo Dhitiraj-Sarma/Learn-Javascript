@@ -91,3 +91,18 @@ let x;
 typeof x; // undefined
 console.log(x); // undefined
 // Undefined is a falsy value
+
+// -------------- NULL --------------------
+// A special value that represents the absence of a value or object
+let y = null; // y is explicitly set to "no value"
+console.log(y); // null
+console.log(typeof y); // "object" (this is a known quirk in JavaScript)
+
+// Example use case:
+let person = {
+  name: "John",
+  age: 30,
+  address: null, // Address is intentionally left as "no value"
+};
+
+console.log(person.address); // null
