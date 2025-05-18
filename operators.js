@@ -152,3 +152,24 @@ console.log(4 >= 9); // false
 // Less than or equal to (<=)
 console.log(3 <= 3); // true
 console.log(8 <= 2); // false
+
+// Logical Operators
+// Logical operators are used to combine or invert boolean values.
+
+/*
+&&   (Logical AND)
+||   (Logical OR)
+!    (Logical NOT)
+*/
+
+// Logical AND (&&)
+console.log(true && true); // true
+console.log(true && false); // false
+
+// Logical OR (||)
+console.log(false || true); // true
+console.log(false || false); // false
+
+// Logical NOT (!)
+console.log(!true); // false
+console.log(!false); // true
