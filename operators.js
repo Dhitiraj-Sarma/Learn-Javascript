@@ -173,3 +173,44 @@ console.log(false || false); // false
 // Logical NOT (!)
 console.log(!true); // false
 console.log(!false); // true
+
+// Bitwise Operators
+// Bitwise operators perform operations on binary representations of numbers.
+
+/*
+&   (Bitwise AND)
+|   (Bitwise OR)
+^   (Bitwise XOR)
+~   (Bitwise NOT)
+<<  (Left shift)
+>>  (Sign-propagating right shift)
+>>> (Zero-fill right shift)
+*/
+
+// Bitwise AND (&)
+console.log(5 & 3); // 1   (0101 & 0011 = 0001)
+console.log(12 & 7); // 4   (1100 & 0111 = 0100)
+
+// Bitwise OR (|)
+console.log(5 | 3); // 7   (0101 | 0011 = 0111)
+console.log(12 | 7); // 15  (1100 | 0111 = 1111)
+
+// Bitwise XOR (^)
+console.log(5 ^ 3); // 6   (0101 ^ 0011 = 0110)
+console.log(12 ^ 7); // 11  (1100 ^ 0111 = 1011)
+
+// Bitwise NOT (~)
+console.log(~5); // -6  (inverts all bits)
+console.log(~0); // -1
+
+// Left shift (<<)
+console.log(5 << 1); // 10  (0101 << 1 = 1010)
+console.log(3 << 2); // 12  (0011 << 2 = 1100)
+
+// Sign-propagating right shift (>>)
+console.log(8 >> 2); // 2   (1000 >> 2 = 0010)
+console.log(-16 >> 2); // -4
+
+// Zero-fill right shift (>>>)
+console.log(8 >>> 2); // 2   (1000 >>> 2 = 0010)
+console.log(-16 >>> 2); // 1073741820
