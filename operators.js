@@ -51,6 +51,12 @@ a++; // 6
 let b = 10;
 ++b; // 11
 
+// Decrement (--)
+let c = 5;
+c--; // 4
+let d = 10;
+--d; // 9
+
 // Assignment Operators
 // Assignment operators assign values to variables, often by combining an operation with the simple assignment (=)
 /*
@@ -59,12 +65,6 @@ let b = 10;
 +=, -=, *=, /=, %= (Arithmetic assignments)
 
 **= (Exponentiation assignment)
-
-<<=, >>=, >>>= (Shift assignments)
-
-&=, ^=, |= (Bitwise assignments)
-
-&&=, ||=, ??= (Logical assignments, ES2020) 
 */
 
 // Simple assignment (=)
@@ -106,3 +106,49 @@ let num10 = 2;
 num10 **= 3; // 8
 let num11 = 5;
 num11 **= 2; // 25
+
+// Comparison Operators
+// Comparison operators are used to compare two values and return a boolean result.
+
+/*
+==   (Equal to, loose equality)
+===  (Strict equal to)
+!=   (Not equal to, loose inequality)
+!==  (Strict not equal to)
+>    (Greater than)
+<    (Less than)
+>=   (Greater than or equal to)
+<=   (Less than or equal to)
+*/
+
+// Equal to (==)
+console.log(5 == "5"); // true (values are equal, type is not checked)
+console.log(10 == 10); // true
+
+// Strict equal to (===)
+console.log(5 === "5"); // false (type is checked)
+console.log(10 === 10); // true
+
+// Not equal to (!=)
+console.log(7 != "8"); // true
+console.log(10 != 10); // false
+
+// Strict not equal to (!==)
+console.log(7 !== "7"); // true
+console.log(10 !== 10); // false
+
+// Greater than (>)
+console.log(8 > 5); // true
+console.log(3 > 7); // false
+
+// Less than (<)
+console.log(2 < 5); // true
+console.log(10 < 3); // false
+
+// Greater than or equal to (>=)
+console.log(6 >= 6); // true
+console.log(4 >= 9); // false
+
+// Less than or equal to (<=)
+console.log(3 <= 3); // true
+console.log(8 <= 2); // false
